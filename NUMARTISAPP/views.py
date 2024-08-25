@@ -232,5 +232,5 @@ def services_view(request):
     else:
         services = Servicetype.objects.all()
 
-    return render(request, 'services.html', {'services': services})
+    return render(request, 'Services.html', {'services': services})
 
