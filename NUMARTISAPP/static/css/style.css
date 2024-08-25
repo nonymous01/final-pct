@@ -551,3 +551,8 @@ color: black !important;
 
 
   
+@media (max-width: 767.98px) {
+    .navbar {
+        position: relative;
+    }
+}

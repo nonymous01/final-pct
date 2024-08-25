@@ -78,6 +78,50 @@ input#username,#password{
 label{
     display: none;
 }
+html {
+    scroll-behavior: smooth;
+}
+
+/* Gestion des alertes */
+.alert {
+    border: 1px solid;
+    border-radius: 0.25rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.alert-success {
+    border-color: #28a745;
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.alert-danger {
+    border-color: #dc3545;
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+input#username, #password {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    width: 100%;
+    border: 1px solid #ced4da;
+    height: 60px;
+}
+
+label {
+    display: none;
+}
+
+/* Désactivation de la barre sticky-top sur mobile */
+@media (max-width: 767.98px) {
+    .navbar {
+        position: relative;
+    }
+}
 
 </style>
 
