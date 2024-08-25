@@ -295,7 +295,7 @@ class DemandeService1(models.Model):
     ville = models.CharField(max_length=100, choices=ville_CHOICES, blank=False, null=True)
     email = models.EmailField(blank=False, null=True)
     tel = models.CharField(max_length=20, blank=False, null=True)
-    budget = models.DecimalField(decimal_places=2, max_digits=20000000, blank=False, null=True)
+    budget = models.DecimalField(max_digits=10, decimal_places=2, default=0.00)
     indisponibilite = models.BooleanField(default=True, null=False,blank=False)
 
     def __str__(self):
